@@ -1,0 +1,84 @@
+.login__card{
+    width: 250px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 18px 18px;
+    margin-top: 60px;
+    margin-right: 120px;
+}
+
+.login__heading>p{ 
+    display: flex;
+    justify-content: center;
+    color: #3C3C3B;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.login__heading>h2 {
+    display: flex;
+    justify-content: center;
+    color: #3C3C3B;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+::placeholder {
+    color: #B1B1B1;
+}
+
+
+
+
+.login__emailContainer>input, .login__passwordContainer>input {
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    margin-top: 17px;
+    /* margin-bottom: 17px; */
+    background-color: #F7F7F7;
+}
+
+.login__chechbox { 
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+    color: #1473E6;
+    font-weight: 500;
+
+}
+
+.login__button{
+    margin-top: 33px;
+    
+}
+
+.login__button { 
+    width: 100%;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #2bbee1;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+
+}
+
+.login__buttonSSO {
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #2bbee1;
+    height: 40px;
+    border: 1px solid #2bbee1;
+}

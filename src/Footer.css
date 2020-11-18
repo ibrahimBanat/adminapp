@@ -1,0 +1,15 @@
+.footer { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #17539C;
+    height: 50px;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.compnayName {
+    color: #2BBEE1;
+
+}
