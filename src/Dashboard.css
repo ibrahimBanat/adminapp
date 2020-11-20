@@ -1,0 +1,8 @@
+.dashboard { 
+    background-color: #ffffff;
+    
+}
+
+.dashboard__w {
+    display: flex;
+}

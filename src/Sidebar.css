@@ -1,0 +1,40 @@
+.sidebar { 
+    margin: 0;
+    width: 192px;
+    padding: 20px 0px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0px 5px 5px #ccc;
+    
+    
+}
+
+.sidebar__item1, .sidebar__item2, .sidebar__item3 { 
+    display: flex;
+    height: 60px;
+    
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    
+}
+
+.sidebar__item1>div, .sidebar__item3>div { 
+    margin-left: 12px;
+    color: #B1B1B1;
+    display: flex;
+}
+
+.sidebar__item2 { 
+    background-color: #F2FBFF ;
+    border-left: 5px solid #20C5FB;
+    
+}
+
+.sidebar__item2> div {
+    margin-left: 12px;
+    color:  #20C5FB ;
+    display: flex;
+
+}
+

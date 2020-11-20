@@ -1,4 +1,4 @@
-const USERS_DATA = 
+
     [
         {
             "ID": "0001",
@@ -25,60 +25,59 @@ const USERS_DATA =
         },
     
         {
-            "ID": "0001",
-            "userName": "tawfeeq",
+            "ID": "0004",
+            "userName": "testperson4",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0005",
+            "userName": "testperson5",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0006",
+            "userName": "testperson6",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0007",
+            "userName": "testperson7",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0008",
+            "userName": "testperson8",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0009",
+            "userName": "testperson9",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         },
     
         {
-            "ID": "0001",
-            "userName": "testperson1",
+            "ID": "0010",
+            "userName": "testperson10",
             "Password": "123456",
             "mobileNumber": "+962787777777",
             "fullName": "First Second Third Family"
         }
     
-    ];
-export default USERS_DATA;
+    ]

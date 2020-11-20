@@ -4,8 +4,8 @@
     background-color: #ffffff;
     border-radius: 10px;
     padding: 18px 18px;
-    margin-top: 60px;
-    margin-right: 120px;
+    /* margin-top: 60px; */
+    /* margin-right: 120px; */
 }
 
 .login__heading>p{ 
@@ -15,6 +15,7 @@
     font-weight: 400;
     font-size: 14px;
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
 
 }
 
@@ -31,6 +32,7 @@
 
 ::placeholder {
     color: #B1B1B1;
+    margin-left: 10px;
 }
 
 
@@ -50,15 +52,37 @@
 .login__chechbox { 
     display: flex;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Nunito', sans-serif;
     color: #1473E6;
     font-weight: 500;
+    margin-top: 10px;
 
 }
+.login__inputCheckbox>label { 
+    margin-left: 5px;
+    
+}
+
+.seprator>h6 { 
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #B1B1B1; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+.seprator> h6 span { 
+    background: #fff; 
+    padding:0 10px; 
+    color: #B1B1B1;
+}
+
+
+
 
 .login__button{
-    margin-top: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 

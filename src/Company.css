@@ -1,0 +1,15 @@
+.company {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.company> h2 {
+    font-weight: 600;
+    line-height: 2em;
+    font-size: 35px;
+}
+.company>p { 
+    display: flex;
+    width: 450px;
+    line-height: 1.5em;
+    font-size: 18px;
+} 

@@ -1,8 +1,26 @@
+
+
+
+
+
+
 .app { 
   
   
   min-height: 100%;
+  /* background-color: #2BBEE1; */
+  min-width: 100%;
   
+}
+
+
+.login__screen {
+  background-color: #2BBEE1;
+  /* margin-right: 0 !important; */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer__container { 
@@ -10,6 +28,7 @@
   bottom: 0;
   width: 100%;
   display: flex;
-  /* justify-content: center; */
+  /* justify-content: center;
+  align-items: center; */
 }
 

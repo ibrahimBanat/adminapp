@@ -1,14 +1,7 @@
 import React from 'react'
+import Company from './Company'
+import Footer from './Footer'
+import LoginCard from './LoginCard'
 
 import './LoginScreen.css'
 
-const LoginScreen = () => {
-    return (
-        <div className="login__screen">
-            
-        </div>
-        
-    )
-}
-
-export default LoginScreen

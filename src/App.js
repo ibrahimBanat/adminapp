@@ -3,28 +3,51 @@ import Company from './Company'
 import Footer from './Footer'
 import LoginCard from './LoginCard'
 
-function App() {
-  return (
-    <div className="app">
-      <main className="full-h">
-      <div className="interface__container container d-flex align-items-center full-h">
-        <div className="row">
-        <div className="interface__intro col-7">
+
+
+import React, { Component } from 'react'
+import Dashboard from './Dashboard';
+
+class App extends Component {
+
+  
+
+  state = {
+    screen: 'login'
+  }
+  
+  render() {
+    
+
+    return (
+      <div className="app">
+        
+        {this.state.screen === 'login' && (
+          <div className="login__screen">
+          
           <Company/>
-        </div>
-        <div className="interface__logincard col">
-          <LoginCard/>
-        </div>
-        </div>
+          <div><LoginCard
+              onNavigate={() => {
+                this.setState(() => ({
+                  screen: 'dashboard'
+                }))
+              }}/></div>
+
+            <div className="footer__container"><Footer/></div>
+      </div>
+        
+      
+      )}
+        
+        {this.state.screen === 'dashboard' && (<Dashboard/>)}
         
       </div>
-      <div className="footer__container">
-
-        <Footer/>
-      </div>
-      </main>
-    </div>
-  );
+      
+    )
+  }
 }
 
-export default App;
+
+
+
+export default App
