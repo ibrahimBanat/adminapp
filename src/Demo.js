@@ -2,7 +2,9 @@ import * as React from 'react'
 import { DataGrid } from '@material-ui/data-grid'
 import './Demo.css'
 import { Component } from 'react'
+
 import Users from './users.json'
+import AddUser from './AddUser'
 
 export default class Demo extends Component {
     
@@ -64,7 +66,14 @@ export default class Demo extends Component {
         
             <div className ="body__table">
                 <div className="card__title">
+                  <div>
                     <h4>Records</h4>
+                  </div>
+                  <div>
+                    <AddUser/>
+                  </div>
+
+
                 </div>
                 <div className="search"><input type="text" placeholder="Search"></input></div>
                 <div style={{ height: 400, width: '100%' }}>

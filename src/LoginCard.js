@@ -1,7 +1,6 @@
 import React from 'react'
-import Checkbox from '@material-ui/core/Checkbox';
 import './Logincard.css';
-
+import users from './api/users';
 
 
 
@@ -11,17 +10,61 @@ import './Logincard.css';
 
 
 class LoginCard extends React.Component {
+
+    state = {
+        users: [],
+        currentUser: '',
+        userPassword: '',
+        err: ''
+      }
+      usersFetched = async () => {
+        const data = await users;
+        // console.log('Before setSate',data);
+        this.setState({users: data});
+        // console.log('State Value',this.state.users);
+      }
+    
+      setCurrentUser = (event) => {
+        // Set the user to state if it exist.
+        this.setState({currentUser: event.target.value})
+      }
+      setPassword = (event) => {
+        // Set the password to state if it exist.
+        this.setState({userPassword: event.target.value})
+      }
+    
+    
+      checkUsers = () => {
+        // check if the user founded
+        const userFounded = this.state.users.find(user => user.userName === this.state.currentUser);
+        const passwordMatch = this.state.users.find(user => user.Password === this.state.userPassword);
+    
+        if(userFounded && passwordMatch) {
+            console.log('the user logged in', this.state.currentUser);
+            console.log('the user pass', this.state.userPassword);
+        } else {
+            console.log('Filed to login');
+        }
+    
+      }
+    
+      onSubmitData = (event,currentUser) => {
+        // Submit the from data
+        event.preventDefault();
+        this.usersFetched();
+        this.checkUsers(currentUser);
+      }
     
 
     render() {
 
-        const {onNavigate} = this.props
+        
         return (
 
 
             <div className="login__card">
           
-            <form className="login__form" onSubmit={this.handleSubmit}>
+            <form className="login__form" onSubmit={this.onSubmitData} action="">
                 <div className="login__heading">
                     <h2>Welcome</h2>
                     <p>login to continue</p>
@@ -29,8 +72,8 @@ class LoginCard extends React.Component {
                 
 
                 <div className="login__emailContainer">
-                    <input type="text" placeholder="Email Adress" ></input>
-                    <input type="password"  placeholder="Password"></input>
+                    <input type="text" value={this.state.currentUser} onChange={this.setCurrentUser} placeholder="Email Adress" required></input>
+                    <input type="password" value={this.state.userPassword} onChange={this.setPassword}  placeholder="Password" required></input>
                 </div>
                 
 
@@ -47,7 +90,7 @@ class LoginCard extends React.Component {
                 </div>
 
                 
-                <button type="submit" onClick={onNavigate} 
+                <button type="submit"  
                 className="login__button">LOGIN</button>
                 
                 
